@@ -23,6 +23,9 @@ jobs:
           repository: OpenCut-app/opencut-classic
           ref: 6ec818fc11334092dd2d068b2735d04aa0ff04e4
 
+      - name: Fremde Verweise entfernen
+        run: python3 .github/werkzeuge/fremdes_entfernen.py
+
       - name: Auslieferadresse einsetzen (mit Ankerpruefung)
         run: |
           set -eu
